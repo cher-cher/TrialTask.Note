@@ -5,7 +5,7 @@
 
 # Сущность
 
-public class Note
+`public class Note
 {
     public int Id { get; set; }
 
@@ -14,7 +14,8 @@ public class Note
     public string Text { get; set; }
 
     public bool IsPrivate { get; set; }
-}
+}`
+
 Для хранения сущности используем in-memory "базу", предоставляемую Entity Framework
 
 # Что требуется сделать
