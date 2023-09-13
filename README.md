@@ -8,8 +8,11 @@
 public class Note
 {
     public int Id { get; set; }
+
     public string Title { get; set; }
+
     public string Text { get; set; }
+
     public bool IsPrivate { get; set; }
 }
 Для хранения сущности используем in-memory "базу", предоставляемую Entity Framework
