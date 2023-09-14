@@ -18,7 +18,7 @@ public class Note
 Для хранения сущности используем in-memory "базу", предоставляемую Entity Framework
 
 # Что требуется сделать
-- нарезать на слои: API, business, data access, etc (названия произвольные) в парадигме "чистой архитектуре" от Uncle Bob (https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html. Вопрос полезности подобной onion-like нарезки в микросервисах дискутабельный, но это за рамками тестового задания
+- нарезать на слои: API, business, data access, etc (названия произвольные) в парадигме "чистой архитектуры" от Uncle Bob (https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html. Вопрос полезности подобной onion-like нарезки в микросервисах дискутабельный, но это за рамками тестового задания
 - использовать MediatR для вызова CRUD оперций на слое use case-ов (бизнес уровень)
 - написать примитивные unit test-ы (или интеграционные)
 
