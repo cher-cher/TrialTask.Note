@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using TrialTask.Notes.Models;
+using TrialTask.Notes.Application;
+using TrialTask.Notes.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
@@ -9,7 +9,8 @@ var services = builder.Services;
 services
    .AddEndpointsApiExplorer()
    .AddSwaggerGen(c => c.EnableAnnotations())
-   .AddDbContext<NoteContext>(opt => opt.UseInMemoryDatabase("notes_db"))
+   .AddInfrastructure()
+   .AddApplication()
    .AddControllers();
 
 var server = builder.Build();
